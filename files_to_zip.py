@@ -4,7 +4,6 @@ from os.path import isfile, join, splitext
 import zipfile
 
 #run
-# C:\Users\Shew\python-3.7.4-embed-amd64\python.exe C:\Users\Shew\files_to_zip.py
 # C:\Users\Shew\python-3.7.4-embed-amd64\python.exe .\files_to_zip.py
 
 path = '.\\'
@@ -35,3 +34,4 @@ for file in filesDir:
     zip = zipfile.ZipFile(nameArchive,targ)
     zip.write(path + file)
     zip.close()
+print('Done!');
