@@ -19,6 +19,9 @@ for file in filesDir:
 for file in filesDir:
     if '.zip' in file:
         filesDir.remove(file)
+for file in filesDir:
+    if 'check_output_list' in file:
+        filesDir.remove(file)
 # print(filesDir) 
 
 for file in filesDir:
